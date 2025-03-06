@@ -1,0 +1,1332 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PawGuardians - Give Love for Saving World Animals</title>
+
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Roboto:wght@300;400;500;700&family=Oswald:wght@600&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- 
+    - #HEADER
+  -->
+
+  <header class="header" data-header>
+    <div class="container">
+
+      <h1>
+        <a href="#" class=""><img src="./assets/images/Capture-removebg-preview.png" width="300" height="300" alt="Wavy line"></a>
+      </h1>
+
+      <!-- <select name="language" class="lang-switch">
+
+        <option value="english">English</option>
+        <option value="french">French</option>
+        <option value="spanish">Spanish</option>
+
+      </select> -->
+
+      <button class="nav-open-btn" aria-label="Open Menu" data-nav-open-btn>
+        <ion-icon name="menu-outline"></ion-icon>
+      </button>
+
+      <nav class="navbar" data-navbar>
+
+        <button class="nav-close-btn" aria-label="Close Menu" data-nav-close-btn>
+          <ion-icon name="close-outline"></ion-icon>
+        </button>
+
+        <a href="#" class="logo">PawGuardians</a>
+
+        <ul class="navbar-list">
+
+          <li>
+            <a href="#home" class="navbar-link" data-nav-link>
+              <span>Home</span>
+
+              <ion-icon name="chevron-forward-outline" aria-hidden="true"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#about" class="navbar-link" data-nav-link>
+              <span>About</span>
+
+              <ion-icon name="chevron-forward-outline" aria-hidden="true"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#service" class="navbar-link" data-nav-link>
+              <span>Service</span>
+
+              <ion-icon name="chevron-forward-outline" aria-hidden="true"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#donate" class="navbar-link" data-nav-link>
+              <span>Donate</span>
+
+              <ion-icon name="chevron-forward-outline" aria-hidden="true"></ion-icon>
+            </a>
+          </li>
+
+          <!-- <li>
+            <a href="#event" class="navbar-link" data-nav-link>
+              <span>Event</span>
+
+              <ion-icon name="chevron-forward-outline" aria-hidden="true"></ion-icon>
+            </a>
+          </li> -->
+
+          <li>
+            <a href="#contact" class="navbar-link" data-nav-link>
+              <span>Contact</span>
+
+              <ion-icon name="chevron-forward-outline" aria-hidden="true"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+      </nav>
+
+      <div class="header-action">
+
+        <button class="search-btn" aria-label="Search">
+          <ion-icon name="search-outline"></ion-icon>
+        </button>
+
+        <button class="btn btn-primary donate-btn" onclick="openDonationPopup()">
+          <span>Donation</span>
+          <!-- <button class="donate-btn" onclick="openDonationPopup()">Donate Now</button> -->
+          <ion-icon name="heart-outline" aria-hidden="true"></ion-icon>
+        </button>
+
+      </div>
+
+    </div>
+  </header>
+
+
+
+
+
+  <main>
+    <article>
+
+      <!-- 
+        - #HERO
+      -->
+
+      <section class="hero" id="home">
+        <div class="container">
+
+          <p class="section-subtitle">
+            <img src="./assets/images/subtitle-img-white.png" width="32" height="7" alt="Wavy line">
+            <img src="./assets/images/subtitle-img-white.png" width="32" height="7" alt="Wavy line">
+
+            <!-- <span>Welcome to PawGuardians</span> -->
+          </p>
+
+          <h2 class="h1 hero-title">
+            California Wildfires: 
+            <strong>Help Save Innocent Animals in Crisis</strong>
+          </h2>
+
+          <p class="hero-text">
+            The devastating wildfires in Southern California have left countless animals injured, lost, and in desperate need of care. They need you now more than ever.
+          </p>
+
+          <p class="hero-text">
+            Your donation to our Emergency Animal Relief Fund will provide urgent rescue, shelter, and medical care to these helpless creatures fighting for their lives.
+          </p>
+
+          <p class="hero-text">
+            <img src="./assets/images/subtitle-img-white.png" width="32" height="7" alt="Wavy line">
+            <strong><img src="./assets/images/subtitle-img-white.png" width="32" height="7" alt="Wavy line">
+              Every second counts. Every life matters.
+              <img src="./assets/images/subtitle-img-white.png" width="32" height="7" alt="Wavy line"></strong>
+            <img src="./assets/images/subtitle-img-white.png" width="32" height="7" alt="Wavy line">
+          </p>
+          <p class="hero-text"> 💚💚💚Show your love💚💚💚. Save a life. 
+          </p>
+          <span>Donate today and be their hope in this time of crisis.</span>
+          <button class="btn btn-primary donate-btn" onclick="openDonationPopup()">
+            <span>Donate Now</span>
+
+            <ion-icon name="heart-outline" aria-hidden="true"></ion-icon>
+          </button>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #FEATURES
+      -->
+
+      <!-- <section class="section features">
+        <div class="container">
+
+          <ul class="features-list">
+
+            <li class="features-item">
+              <div class="item-icon">
+                <ion-icon name="shield-checkmark-outline"></ion-icon>
+              </div>
+
+              <div>
+                <h3 class="h4 item-title">Safe Shelter</h3>
+
+                <p class="item-text">
+                  Sit amet consecte adiscine
+                  eiusm temor ultrices.
+                </p>
+              </div>
+            </li>
+
+            <li class="features-item">
+              <div class="item-icon">
+                <ion-icon name="water-outline"></ion-icon>
+              </div>
+
+              <div>
+                <h3 class="h4 item-title">Safe Water</h3>
+
+                <p class="item-text">
+                  Sit amet consecte adiscine
+                  eiusm temor ultrices.
+                </p>
+              </div>
+            </li>
+
+            <li class="features-item">
+              <div class="item-icon">
+                <ion-icon name="leaf-outline"></ion-icon>
+              </div>
+
+              <div>
+                <h3 class="h4 item-title">Ecology Save</h3>
+
+                <p class="item-text">
+                  Sit amet consecte adiscine
+                  eiusm temor ultrices.
+                </p>
+              </div>
+            </li>
+
+            <li class="features-item">
+              <div class="item-icon">
+                <ion-icon name="snow-outline"></ion-icon>
+              </div>
+
+              <div>
+                <h3 class="h4 item-title">Environment</h3>
+
+                <p class="item-text">
+                  Sit amet consecte adiscine
+                  eiusm temor ultrices.
+                </p>
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section> -->
+
+
+
+
+
+      <!-- 
+        - #ABOUT
+      -->
+
+      <section class="section about" id="about">
+        <div class="container">
+
+          <div class="about-banner">
+
+            <!-- <h2 class="deco-title">About Us</h2> -->
+
+            <img src="./assets/images/deco-img.png" width="58" height="261" alt="" class="deco-img">
+
+            <div class="banner-row">
+
+              <div class="banner-col">
+                <img src="./assets/images/about-banner-11.jpeg" width="315" height="380" loading="lazy" alt="Tiger"
+                  class="about-img w-100">
+
+                <!-- <img src="./assets/images/about-banner-2.jpg" width="386" height="250" loading="lazy" alt="Panda"
+                  class="about-img about-img-2 w-100"> -->
+              </div>
+
+              <div class="banner-col">
+                <!-- <img src="./assets/images/about-banner-3.jpg" width="386" height="250" loading="lazy" alt="Elephant"
+                  class="about-img about-img-3 w-100"> -->
+
+                <img src="./assets/images/about-banner-41.jpg" width="315" height="380" loading="lazy" alt="Deer"
+                  class="about-img w-100">
+              </div>
+              
+
+            </div>
+            <div class="banner-row">
+
+              <div class="banner-col">
+                <img src="./assets/images/about-banner-42.jpeg" width="315" height="380" loading="lazy" alt="Tiger"
+                  class="about-img w-100">
+
+                <!-- <img src="./assets/images/about-banner-2.jpg" width="386" height="250" loading="lazy" alt="Panda"
+                  class="about-img about-img-2 w-100"> -->
+              </div>
+
+              <div class="banner-col">
+                <!-- <img src="./assets/images/about-banner-3.jpg" width="386" height="250" loading="lazy" alt="Elephant"
+                  class="about-img about-img-3 w-100"> -->
+
+                <img src="./assets/images/about-banner-12.jpg" width="315" height="380" loading="lazy" alt="Deer"
+                  class="about-img w-100">
+              </div>
+              
+
+            </div>
+            <div class="banner-row">
+
+              <div class="banner-col">
+                <img src="./assets/images/about-banner-13.jpeg" width="315" height="380" loading="lazy" alt="Tiger"
+                  class="about-img w-100">
+
+                <!-- <img src="./assets/images/about-banner-2.jpg" width="386" height="250" loading="lazy" alt="Panda"
+                  class="about-img about-img-2 w-100"> -->
+              </div>
+
+              <div class="banner-col">
+                <!-- <img src="./assets/images/about-banner-3.jpg" width="386" height="250" loading="lazy" alt="Elephant"
+                  class="about-img about-img-3 w-100"> -->
+
+                <img src="./assets/images/about-banner-43.jpeg" width="315" height="380" loading="lazy" alt="Deer"
+                  class="about-img w-100">
+              </div>
+              
+
+            </div>
+
+          </div>
+
+          <div class="about-content">
+
+            <p class="section-subtitle">
+              <img src="./assets/images/subtitle-img-green.png" width="32" height="7" alt="Wavy line">
+
+              <span>Why Choose Us</span>
+            </p>
+
+            <h2 class="h2 section-title">
+              Rise Your Hand to Save <strong>World Animals Life</strong>
+            </h2>
+
+            <!-- <ul class="tab-nav">
+
+              <li>
+                <button class="tab-btn active">Our Mission</button>
+              </li>
+
+              <li>
+                <button class="tab-btn">Our Vision</button>
+              </li>
+
+              <li>
+                <button class="tab-btn">Next Plan</button>
+              </li>
+
+            </ul> -->
+
+            <div class="tab-content">
+
+              <p class="section-text">
+                At PawGuardians, human connections power our mission. We’re a global non-profit dedicated to helping animals and people thrive together—working across seas, oceans, and over 40 countries worldwide. Our approach combines expertise and everyday compassion to rescue, rehabilitate, and release animals while restoring and protecting their natural habitats.
+              </p>
+              <p class="section-text">  
+                The challenges we face are urgent and complex, but we meet them head-on with fresh thinking and bold action. Through partnerships with local communities, governments, NGOs, and businesses, we pioneer innovative solutions that help all species not just survive—but flourish.
+              </p>
+
+              <ul class="tab-list">
+
+                <li class="tab-item">
+                  <div class="item-icon">
+                    <ion-icon name="checkmark-circle"></ion-icon>  
+                  </div>
+                  
+                  
+                  <p class="section-text">
+                    <span class="tab-text">Tackling Complex Problems with Creativity</span>
+                    In a world of increasing challenges—rising online trafficking, ocean noise pollution, and devastating storms—we understand that yesterday's solutions won’t solve today’s problems. That’s why we embrace innovation and adaptability, thinking and acting differently.  
+                    
+                    When wildfires ravaged California, leaving countless dogs and cats stranded, we developed groundbreaking technology to locate and rescue them. Using drones with thermal imaging, we searched smoke-filled areas to ensure no paw was left behind. We set up mobile veterinary clinics in evacuation zones, offering emergency care, food, and shelter.   
+                                        
+                    We’re not just finding different ways to do things—we’re finding better ways.
+
+                  </p>
+                </li>
+
+                  &nbsp; &nbsp; &nbsp;
+
+                <li class="tab-item">
+                  <div class="item-icon">
+                    <ion-icon name="checkmark-circle"></ion-icon>
+                  </div>
+
+                  
+                  <p class="section-text">
+                    <span class="tab-text">Every Animal Matters</span>
+                    We believe that when we rescue a single animal—a dog trapped in a wildfire, a cat abandoned after a flood, or a puppy left homeless by a hurricane—we’re doing more than saving a life. We’re reuniting families, restoring hope, and preserving the bond between humans and their beloved pets.  
+
+                    Across six continents, we’ve rescued over 200,000 animals, and while that’s just a fraction of those in distress, every success fuels our hope and determination. From providing emergency shelters to reuniting lost pets with their families, we’re committed to making a difference.  
+
+                    Because at PawGuardians, we don’t just protect animals—we protect the future.
+
+                  </p>
+                </li>
+
+                <!-- <li class="tab-item">
+                  <div class="item-icon">
+                    <ion-icon name="checkmark-circle"></ion-icon>
+                  </div>
+
+                  <p class="tab-text">Charity For Water</p>
+                </li>
+
+                <li class="tab-item">
+                  <div class="item-icon">
+                    <ion-icon name="checkmark-circle"></ion-icon>
+                  </div>
+
+                  <p class="tab-text">Charity For Medical</p>
+                </li> -->
+
+              </ul>
+
+              <a  href="#contact"><button class="btn btn-secondary">
+                <span>Join Us.....</span>
+
+                <ion-icon name="heart-outline" aria-hidden="true"></ion-icon>
+              </button></a><strong>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Be the Difference.</strong><p> Together, we can create a world where animals and people thrive side by side.</p>
+
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #CTA
+      -->
+
+      <section class="section cta">
+        <div class="container">
+
+          <div class="cta-content">
+            <h2 class="h2 section-title">54+ Trusted Global Partners</h2>
+
+            <a  href="#contact"><button class="btn btn-outline">
+              <span>Become a Partner</span>
+
+              <ion-icon name="heart-outline" aria-hidden="true"></ion-icon>
+            </button></a>
+
+            <h4 style="padding: 20px; color: white;">We cannot accomplish our goals without you. Be part of our mission to end animal suffering.</h4>
+            <h4 style="color: white;"> Every contribution counts!</h4>
+          </div>
+
+          <figure class="cta-banner">
+            <img src="./assets/images/dog1.jpg" width="520" height="228" loading="lazy" alt="Fox"
+              class="img-cover">
+          </figure>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #SERVICE
+      -->
+
+      <section class="section service" id="service" style="background-image: url('./assets/images/service-map.png')">
+        <div class="container">
+
+          <p class="section-subtitle">
+            <img src="./assets/images/subtitle-img-green.png" width="32" height="7" alt="Wavy line">
+
+            <span>What We Do</span>
+          </p>
+
+          <h2 class="h2 section-title">
+            We Work Differently to <strong>keep Animals in Need Safe</strong>
+          </h2>
+
+          <ul class="service-list">
+
+            <li>
+              <div class="service-card">
+
+                <div class="card-icon">
+                  <ion-icon name="leaf-outline"></ion-icon>
+                </div>
+
+                <h3 class="h3 card-title">Safe Shelter & Care</h3>
+                &nbsp;
+                <p class="card-text">
+                  We provide secure, loving shelters for animals who have been abandoned, abused, or displaced by disasters. Our dedicated team ensures that every dog and cat receives nutritious food, medical attention, and the emotional support they need to heal and thrive.
+                </p>
+
+                <!-- <a href="#" class="btn-link">
+                  <span>Read More</span>
+
+                  <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+                </a> -->
+
+              </div>
+            </li>
+
+            <li>
+              <div class="service-card">
+
+                <div class="card-icon">
+                  <ion-icon name="earth-outline"></ion-icon>
+                </div>
+
+                <h3 class="h3 card-title">Rescue & Rehabilitation</h3>
+
+                <p class="card-text">
+                  From the streets to crisis zones, our rescue teams respond swiftly to bring animals to safety. Whether it's a stray dog struggling to survive or a kitten injured in a natural disaster, we provide urgent medical care and rehabilitation to help them regain their strength and trust in humans.
+                </p>
+
+                <!-- <a href="#" class="btn-link">
+                  <span>Read More</span>
+
+                  <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+                </a> -->
+
+              </div>
+            </li>
+
+            <li>
+              <div class="service-card">
+
+                <div class="card-icon">
+                  <ion-icon name="flower-outline"></ion-icon>
+                </div>
+
+                <h3 class="h3 card-title">Adoption & Rehoming</h3>
+                &nbsp;
+                <p class="card-text">
+                  Every animal deserves a second chance at love and happiness. Through our adoption programs, we match rescued cats and dogs with caring families, ensuring they find forever homes where they can feel safe, cherished, and valued.
+                </p>
+
+                <!-- <a href="#" class="btn-link">
+                  <span>Read More</span>
+
+                  <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+                </a> -->
+
+              </div>
+            </li>
+
+            <li>
+              <div class="service-card">
+
+                <div class="card-icon">
+                  <ion-icon name="boat-outline"></ion-icon>
+                </div>
+
+                <h3 class="h3 card-title">Community Education & Outreach</h3>
+
+                <p class="card-text">
+                  We believe prevention is just as important as rescue. Our outreach programs educate communities on responsible pet ownership, the importance of spaying/neutering, and how to prevent cruelty and neglect—empowering people to be lifelong advocates for animals.
+                </p>
+
+                <!-- <a href="#" class="btn-link">
+                  <span>Read More</span>
+
+                  <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+                </a> -->
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #DONATE
+      -->
+
+      <section class="section donate" id="donate">
+        <div class="container">
+
+          <ul class="donate-list">
+
+            <li>
+              <div class="donate-card">
+
+                <figure class="card-banner">
+                  <img src="./assets/images/donate-1.jpeg" width="520" height="325" loading="lazy" alt="Elephant"
+                    class="img-cover">
+                </figure>
+
+                <div class="card-content">
+
+                  <div class="progress-wrapper">
+                    <p class="progress-text">
+                      <span>Raised</span>
+
+                      <data value="28655">$28,655</data>
+                    </p>
+
+                    <data class="progress-value" value="38">38%</data>
+                  </div>
+
+                  <div class="progress-box">
+                    <div class="progress"></div>
+                  </div>
+
+                  <h3 class="h3 card-title">Donate Now To Save Animals</h3>
+
+                  <div class="card-wrapper">
+
+                    <p class="card-wrapper-text">
+                      <span>Goal</span>
+
+                      <data class="green" value="75000">$75,000</data>
+                    </p>
+
+                    <p class="card-wrapper-text">
+                      <span>Raise</span>
+
+                      <data class="yellow" value="28655">$28,655</data>
+                    </p>
+
+                    <p class="card-wrapper-text">
+                      <span>To Go</span>
+
+                      <data class="cyan" value="46345">$46,345</data>
+                    </p>
+
+                  </div>
+
+                  <button class="btn btn-secondary donate-btn" onclick="openDonationPopup()">
+                    <span>Donation</span>
+
+                    <ion-icon name="heart-outline" aria-hidden="true"></ion-icon>
+                  </button>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="donate-card">
+
+                <figure class="card-banner">
+                  <img src="./assets/images/donate-2.jpeg" width="520" height="325" loading="lazy" alt="Elephant"
+                    class="img-cover">
+                </figure>
+
+                <div class="card-content">
+
+                  <div class="progress-wrapper">
+                    <p class="progress-text">
+                      <span>Raised</span>
+
+                      <data value="28655">$28,655</data>
+                    </p>
+
+                    <data class="progress-value" value="38">38%</data>
+                  </div>
+
+                  <div class="progress-box">
+                    <div class="progress"></div>
+                  </div>
+
+                  <h3 class="h3 card-title">Donate Now To Save Animals</h3>
+
+                  <div class="card-wrapper">
+
+                    <p class="card-wrapper-text">
+                      <span>Goal</span>
+
+                      <data class="green" value="75000">$75,000</data>
+                    </p>
+
+                    <p class="card-wrapper-text">
+                      <span>Raise</span>
+
+                      <data class="yellow" value="28655">$28,655</data>
+                    </p>
+
+                    <p class="card-wrapper-text">
+                      <span>To Go</span>
+
+                      <data class="cyan" value="46345">$46,345</data>
+                    </p>
+
+                  </div>
+
+                  <button class="btn btn-secondary donate-btn" onclick="openDonationPopup()">
+                    <span>Donation</span>
+
+                    <ion-icon name="heart-outline" aria-hidden="true"></ion-icon>
+                  </button>
+
+                </div>
+
+              </div>
+            </li>
+
+
+            <li>
+              <div class="donate-card">
+
+                <figure class="card-banner">
+                  <img src="./assets/images/donate-3.jpeg" width="520" height="325" loading="lazy" alt="Elephant"
+                    class="img-cover">
+                </figure>
+
+                <div class="card-content">
+
+                  <div class="progress-wrapper">
+                    <p class="progress-text">
+                      <span>Raised</span>
+
+                      <data value="28655">$28,655</data>
+                    </p>
+
+                    <data class="progress-value" value="38">38%</data>
+                  </div>
+
+                  <div class="progress-box">
+                    <div class="progress"></div>
+                  </div>
+
+                  <h3 class="h3 card-title">Donate Now To Save Animals</h3>
+
+                  <div class="card-wrapper">
+
+                    <p class="card-wrapper-text">
+                      <span>Goal</span>
+
+                      <data class="green" value="75000">$75,000</data>
+                    </p>
+
+                    <p class="card-wrapper-text">
+                      <span>Raise</span>
+
+                      <data class="yellow" value="28655">$28,655</data>
+                    </p>
+
+                    <p class="card-wrapper-text">
+                      <span>To Go</span>
+
+                      <data class="cyan" value="46345">$46,345</data>
+                    </p>
+
+                  </div>
+
+                  <button class="btn btn-secondary donate-btn" onclick="openDonationPopup()">
+                    <span>Donation</span>
+
+                    <ion-icon name="heart-outline" aria-hidden="true"></ion-icon>
+                  </button>
+
+                </div>
+
+              </div>
+            </li>
+
+
+            <li>
+              <div class="donate-card">
+
+                <figure class="card-banner">
+                  <img src="./assets/images/donate-4.jpeg" width="520" height="325" loading="lazy" alt="Elephant"
+                    class="img-cover">
+                </figure>
+
+                <div class="card-content">
+
+                  <div class="progress-wrapper">
+                    <p class="progress-text">
+                      <span>Raised</span>
+
+                      <data value="28655">$28,655</data>
+                    </p>
+
+                    <data class="progress-value" value="38">38%</data>
+                  </div>
+
+                  <div class="progress-box">
+                    <div class="progress"></div>
+                  </div>
+
+                  <h3 class="h3 card-title">Donate Now To Save Animals</h3>
+
+                  <div class="card-wrapper">
+
+                    <p class="card-wrapper-text">
+                      <span>Goal</span>
+
+                      <data class="green" value="75000">$75,000</data>
+                    </p>
+
+                    <p class="card-wrapper-text">
+                      <span>Raise</span>
+
+                      <data class="yellow" value="28655">$28,655</data>
+                    </p>
+
+                    <p class="card-wrapper-text">
+                      <span>To Go</span>
+
+                      <data class="cyan" value="46345">$46,345</data>
+                    </p>
+
+                  </div>
+
+                  <button class="btn btn-secondary donate-btn" onclick="openDonationPopup()">
+                    <span>Donation</span>
+
+                    <ion-icon name="heart-outline" aria-hidden="true"></ion-icon>
+                  </button>
+
+                </div>
+
+              </div>
+            </li>
+          </ul>
+
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #TESTIMONIALS
+      -->
+
+      <section class="testi">
+
+        <div class="testi-content">
+        
+          <p class="section-subtitle">
+            <img src="./assets/images/subtitle-img-green.png" width="32" height="7" alt="Wavy line">
+            <span>Our Testimonials</span>
+          </p>
+      
+          <h2 class="h2 section-title">
+            What People Say About <strong>Our Organization</strong>
+          </h2>
+      
+          <div class="testi-slider">
+
+            <div class="testi-card">
+              <figure class="card-avatar">
+                <img src="./assets/images/testi1.jpg" width="60" height="60" loading="lazy" alt="David C. Newman">
+              </figure>
+              <div>
+                <blockquote class="testi-text">
+                  I am proud to support an organization that’s truly making a difference. The innovative solutions they provide to rescue and rehabilitate animals are inspiring, and their commitment to protecting both animals and their habitats resonates deeply with me.
+
+                  Knowing that my donations are helping rescue animals from natural disasters and improve the lives of countless species gives me confidence in their mission. I encourage others to support PawGuardians and be part of this incredible work.
+                </blockquote>
+                <h3 class="testi-name">David C. Newman</h3>
+                <p class="testi-title">Business Manager</p>
+              </div>
+            </div>
+
+            <div class="testi-card">
+              <figure class="card-avatar">
+                <img src="./assets/images/testi2.jpg" width="60" height="60" loading="lazy" alt="Jessica M. Hall">
+              </figure>
+              <div>
+                <blockquote class="testi-text">
+                  I’ve been a supporter of PawGuardians for some time. What draws me to this organization is their unique approach to animal rescue and conservation. Their use of innovative technologies and commitment to protecting both animals and their natural habitats is inspiring.
+
+                  As a donor, I know my contributions are being used effectively to make a real, lasting impact in the lives of animals and communities around the world. I’m proud to be part of their mission to help animals thrive, and I encourage others to support their incredible work.
+                </blockquote>
+                <h3 class="testi-name">Jessica F. Hall</h3>
+                <p class="testi-title">Public Servant</p>
+              </div>
+            </div>
+            
+            <div class="testi-card">
+              <figure class="card-avatar">
+                <img src="./assets/images/testi3.jpg" width="60" height="60" loading="lazy" alt="Mark Wyen">
+              </figure>
+              <div>
+                <blockquote class="testi-text">
+                  I proudly support PawGuardians. Their dedication to rescuing animals and protecting their environments is truly inspiring. The work they do, from innovative rescue methods to community partnerships, makes a real difference in the lives of countless animals.
+
+                  As a donor, it’s rewarding to know my contributions are part of a global effort to help animals and preserve our natural world. I wholeheartedly encourage others to join me in supporting PawGuardians and their vital mission.
+                </blockquote>
+                <h3 class="testi-name">Mark Wien</h3>
+                <p class="testi-title">Product Manager</p>
+              </div>
+            </div>
+
+            <div class="testi-card">
+              <figure class="card-avatar">
+                <img src="./assets/images/testi4.jpg" width="60" height="60" loading="lazy" alt="Emily L. Brown">
+              </figure>
+              <div>
+                <blockquote class="testi-text">
+                  I’m honored to support PawGuardians. Their innovative approach to rescuing animals and protecting their habitats is truly inspiring. As a donor, I’m proud to know my support is making a real difference.
+
+                  I encourage others to join in and help advance this important mission.
+                </blockquote>
+                <h3 class="testi-name">Emily L. Brown</h3>
+                <p class="testi-title">Manager, Marketing & Business Strategy</p>
+              </div>
+            </div>
+      
+          </div>
+      
+          <div class="testi-dots">
+            <span class="dot active"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+          </div>
+      
+        </div>
+      
+        <div class="testi-form"  id="contact">
+          <form action="https://formspree.io/f/mwplelwa" method="POST" class="contact-form">
+            <h3 class="form-title">Contact Us</h3>
+            <div class="form-group">
+              <label for="name">Your Name</label>
+              <input type="text" name="name" id="name" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Your Email</label>
+              <input type="email" name="email" id="email" required>
+            </div>
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <input type="text" name="subject" id="subject" required>
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea name="message" id="message" rows="4" required></textarea>
+            </div>
+            <button type="submit" class="form-button">Send Message</button>
+          </form>
+        </div>
+      
+      </section>
+
+
+
+
+
+      <!-- 
+        - #PARTNER
+      -->
+
+      <section class="section partner">
+        <div class="container">
+
+          <span href="#" class="partner-logo">
+            <img src="./assets/images/partner-1.png" width="157" height="55" loading="lazy" alt="Children Fund"
+              class="gray">
+
+            <img src="./assets/images/partner-1-active.png" width="157" height="55" loading="lazy" alt="Children Fund"
+              class="color">
+          </span>
+
+          <span href="#" class="partner-logo">
+            <img src="./assets/images/partner-2.png" width="163" height="55" loading="lazy" alt="Non Profit Agency"
+              class="gray">
+
+            <img src="./assets/images/partner-2-active.png" width="163" height="55" loading="lazy"
+              alt="Non Profit Agency" class="color">
+          </span>
+
+          <span href="#" class="partner-logo">
+            <img src="./assets/images/partner-3.png" width="149" height="55" loading="lazy" alt="Rise Hand Help Us"
+              class="gray">
+
+            <img src="./assets/images/partner-3-active.png" width="149" height="55" loading="lazy"
+              alt="Rise Hand Help Us" class="color">
+          </span>
+
+          <span href="#" class="partner-logo">
+            <img src="./assets/images/partner-4.png" width="169" height="58" loading="lazy" alt="Helping" class="gray">
+
+            <img src="./assets/images/partner-4-active.png" width="169" height="58" loading="lazy" alt="Helping"
+              class="color">
+          </span>
+
+          <span href="#" class="partner-logo">
+            <img src="./assets/images/partner-5.png" width="211" height="55" loading="lazy" alt="Poor Fund Organization"
+              class="gray">
+
+            <img src="./assets/images/partner-5-active.png" width="211" height="55" loading="lazy"
+              alt="Poor Fund Organization" class="color">
+          </span>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #EVENT
+      -->
+
+      <!-- <section class="section event" id="event">
+        <div class="container">
+
+          <p class="section-subtitle">
+            <img src="./assets/images/subtitle-img-green.png" width="32" height="7" alt="Wavy line">
+
+            <span>Event & Program</span>
+
+            <img src="./assets/images/subtitle-img-green.png" width="32" height="7" alt="Wavy line">
+          </p>
+
+          <h2 class="h2 section-title">
+            Our Most Popular Causes For <strong>Building Fund</strong>
+          </h2>
+
+          <ul class="event-list">
+
+            <li>
+              <div class="event-card">
+
+                <time class="card-time" datetime="01-05">
+                  <span class="month">Jan</span>
+
+                  <span class="date">05</span>
+                </time>
+
+                <div class="wrapper">
+
+                  <div class="card-content">
+                    <p class="card-subtitle">Ocean Water</p>
+
+                    <h3 class="card-title">Far from the countries Vokalia and Consonantia 2022</h3>
+
+                    <p class="card-text">
+                      Sit amet consectetur adipiscing elit sed do eiusmod tempor
+                    </p>
+                  </div>
+
+                  <button class="btn btn-white">
+                    <span>View Events</span>
+
+                    <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+                  </button>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="event-card">
+
+                <time class="card-time" datetime="02-23">
+                  <span class="month">Feb</span>
+
+                  <span class="date">23</span>
+                </time>
+
+                <div class="wrapper">
+
+                  <div class="card-content">
+                    <p class="card-subtitle">Ocean Water</p>
+
+                    <h3 class="card-title">Far from the countries Vokalia and Consonantia 2022</h3>
+
+                    <p class="card-text">
+                      Sit amet consectetur adipiscing elit sed do eiusmod tempor
+                    </p>
+                  </div>
+
+                  <button class="btn btn-white">
+                    <span>View Events</span>
+
+                    <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+                  </button>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="event-card">
+
+                <time class="card-time" datetime="03-27">
+                  <span class="month">Mar</span>
+
+                  <span class="date">27</span>
+                </time>
+
+                <div class="wrapper">
+
+                  <div class="card-content">
+                    <p class="card-subtitle">Ocean Water</p>
+
+                    <h3 class="card-title">Far from the countries Vokalia and Consonantia 2022</h3>
+
+                    <p class="card-text">
+                      Sit amet consectetur adipiscing elit sed do eiusmod tempor
+                    </p>
+                  </div>
+
+                  <button class="btn btn-white">
+                    <span>View Events</span>
+
+                    <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+                  </button>
+
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+          <button class="btn btn-secondary">
+            <span>Learn More Us</span>
+
+            <ion-icon name="heart-outline" aria-hidden="true"></ion-icon>
+          </button>
+
+        </div>
+      </section> -->
+
+
+
+
+
+      <!-- 
+        - #INSTA POST
+      -->
+
+      <section class="insta-post">
+
+        <ul class="insta-post-list">
+
+          <li class="insta-post-item">
+            <span href="" class="insta-post-link">
+              <img src="./assets/images/foot3.jpg" width="320" height="300" loading="lazy" alt="PAN"
+                class="img-cover">
+
+              <ion-icon name="logo-instagram"></ion-icon>
+            </span>
+          </li>
+
+          <li class="insta-post-item">
+            <span href="#" class="insta-post-link">
+              <img src="./assets/images/foot5.jpg" width="320" height="300" loading="lazy" alt="PAN"
+                class="img-cover">
+
+              <ion-icon name="logo-instagram"></ion-icon>
+            </span>
+          </li>
+
+          <li class="insta-post-item">
+            <span href="#" class="insta-post-link">
+              <img src="./assets/images/foot1.jpg" width="320" height="300" loading="lazy" alt="PAN"
+                class="img-cover">
+
+              <ion-icon name="logo-instagram"></ion-icon>
+            </span>
+          </li>
+
+          <li class="insta-post-item">
+            <span href="#" class="insta-post-link">
+              <img src="./assets/images/foot4.jpg" width="320" height="300" loading="lazy" alt="PAN"
+                class="img-cover">
+
+              <ion-icon name="logo-instagram"></ion-icon>
+            </span>
+          </li>
+
+          <li class="insta-post-item">
+            <span href="#" class="insta-post-link">
+              <img src="./assets/images/foot2.jpg" width="320" height="300" loading="lazy" alt="PAN"
+                class="img-cover">
+
+              <ion-icon name="logo-instagram"></ion-icon>
+            </span>
+          </li>
+
+        </ul>
+
+      </section>
+
+    </article>
+  </main>
+
+
+
+
+
+  <!-- 
+    - #FOOTER
+  -->
+
+  <footer class="footer">
+    <div class="container">
+
+      <!-- <ul class="footer-list">
+
+        <li>
+          <a href="#" class="footer-link">Terms of use</a>
+        </li>
+
+        <li>
+          <a href="#" class="footer-link">Privacy & Policy</a>
+        </li>
+
+      </ul> -->
+
+      <p class="copyright">
+        Copyright 2025 <a href="#" class="copyright-link">PawGuardians</a>. All Rights Reserved.
+      </p>
+
+    </div>
+  </footer>
+
+
+
+
+
+<!-- Donation Popup -->
+<!-- Donation Popup -->
+<div id="donationPopup" class="popup-overlay">
+  <div class="popup-content">
+    <span class="popup-close" onclick="closeDonationPopup()">&times;</span>
+
+    <div class="popup-container">
+      <!-- Left Section: Image and Description -->
+      <div class="popup-left">
+        <img src="./assets/images/help1.jpg" alt="Donate" class="popup-image">
+        <p><a href="#" class=""><img src="./assets/images/Capture2.png" width="300" height="300" alt="Wavy line"></a></p>
+        <p class="popup-description cardx-text">
+          Every donation, no matter the size, is a lifeline for animals in need. Your generosity helps us rescue, heal, and provide a second chance to innocent lives who have nowhere else to turn. Together, we can turn their pain into hope and their suffering into love. Please, join us in making a difference.
+        </p>
+      </div>
+
+      <!-- Right Section: Payment Options -->
+      <div class="popup-right">
+        <h3>Select Payment Method</h3>
+        <select id="paymentMethod" onchange="changePaymentMethod()" class="styled-select">
+          <option value="crypto">Cryptocurrency</option>
+          <option value="paypal">PayPal</option>
+          <option value="card">Credit/Debit Card</option>
+        </select>
+
+        <div id="cryptoPayment" class="payment-method">
+          <p>Select a cryptocurrency:</p>
+          <select id="cryptoSelect" onchange="updateCryptoDetails()" class="styled-select">
+            <option value="bitcoin">Bitcoin (BTC)</option>
+            <option value="ethereum">Ethereum (ETH)</option>
+            <option value="bnb">BNB (BEP20)</option>
+            <option value="xrp">XRP (XRP)</option>
+            <option value="usdt">USDT (TRC20)</option>
+          </select>
+          <img id="cryptoQR" src="./assets/images/btc.jpg" alt="Crypto QR Code" class="crypto-qr">
+          <div class="crypto-address">
+            <p id="cryptoAddress">1A1zP1eP5QGefi2DMPTfTL5SLmv7DivfNa</p>
+            <button class="copy-btn" onclick="copyCryptoAddress()">Copy</button>
+          </div>
+          <!-- Donation Form -->
+          <form id="donationForm" class="donation-form" action="https://formspree.io/f/mnqkyjpk" method="POST">
+            <input type="email" name="email" placeholder="Your Email" class="form-control" required>
+            <textarea placeholder="Your Message" name="message" class="form-control" rows="3" required></textarea>
+            <button type="submit" class="form-button">Submit</button>
+          </form>
+        </div>
+
+        <div id="paypalPayment" class="payment-method" style="display: none;">
+          <p>This service is currently unavailable. Please use cryptocurrency.</p>
+        </div>
+
+        <div id="cardPayment" class="payment-method" style="display: none;">
+          <p>This service is currently unavailable. Please use cryptocurrency.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <!-- <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script> -->
+
+</body>
+
+</html>
