@@ -797,7 +797,7 @@ body {
 .testi {
   background-color: var(--jet);
   overflow: hidden;
-  display: flex;
+  /* display: flex; */
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
@@ -808,75 +808,56 @@ body {
   flex: 1 1 50%;
   text-align: center;
   padding-right: 30px;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
 }
 
 .testi .section-title {
   color: var(--white);
   margin-block: 10px 40px;
+  font-size: 2rem; /* Increased font size for larger screens */
 }
 
+/* Testimonials Slider */
 .testi-slider {
   display: flex;
   width: 100%;
-  max-width: 600px;
+  max-width: 800px; /* Increased max-width for larger screens */
   margin: 0 auto;
   overflow: hidden;
   position: relative;
 }
 
 .testi-card {
-  flex: 0 0 100%; /* Each card takes full width of the slider */
+  flex: 0 0 100%;
   color: var(--white);
   text-align: left;
   transition: transform 0.5s ease-in-out;
-  box-sizing: border-box; /* Ensure padding and border are included in the width */
-}
-
-.testi-dots {
-  display: flex;
-  justify-content: center;
-  gap: 10px;
-  margin-top: 20px;
-}
-
-.testi-dots .dot {
-  width: 10px;
-  height: 10px;
-  background-color: var(--white_50);
-  border-radius: 50%;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-.testi-dots .dot.active {
-  background-color: var(--white);
-}
-
-.testi-card figure {
-  margin-bottom: 15px;
-}
-
-.testi-text,
-.testi-name {
-  font-size: var(--fs-8);
+  box-sizing: border-box;
 }
 
 .testi-text {
   padding-block-end: 30px;
   border-block-end: 1px solid var(--white_10);
   margin-block: 20px 30px;
+  font-size: 1.5rem; /* Increased font size for better readability on large screens */
+  line-height: 1.5;
+  word-wrap: break-word;
+  max-height: none;
+  overflow: visible;
+  text-align: justify;
 }
 
 .testi-title {
   color: var(--white_50);
-  font-size: var(--fs-10);
+  font-size: 1.1rem; /* Adjusted for better readability */
 }
 
-/* Contact form styling */
+/* Contact Form Styling */
 .testi-form {
-  flex: 1 1 100%; /* Take full width */
-  padding: 20px; /* Add padding for spacing */
-  max-width: 100%; /* Ensure it doesn't overflow */
+  flex: 1 1 100%;
+  padding: 20px;
+  max-width: 100%;
 }
 
 .contact-form {
@@ -884,13 +865,14 @@ body {
   padding: 30px;
   border-radius: 10px;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-  width: 100%; /* Make the form take full width of its container */
-  max-width: 600px; /* Limit maximum width for better readability on desktop */
-  margin: 0 auto; /* Center the form horizontally */
+  width: 100%;
+  max-width: 700px; /* Increase max-width for larger screens */
+  margin: 0 auto;
+  box-sizing: border-box;
 }
 
 .contact-form .form-title {
-  font-size: 1.5rem;
+  font-size: 2rem; /* Increased title font size */
   margin-bottom: 20px;
   text-align: center;
   color: var(--jet);
@@ -910,7 +892,7 @@ body {
 .contact-form input,
 .contact-form textarea {
   width: 100%;
-  padding: 10px;
+  padding: 12px;
   border: 1px solid var(--white_50);
   border-radius: 5px;
   font-size: 1.5rem;
@@ -924,11 +906,11 @@ body {
 }
 
 .contact-form .form-button {
-  background-color: #4CAF50; /* Green color */
+  background-color: #4CAF50;
   color: var(--white);
   border: none;
-  padding: 12px 20px;
-  font-size: 1.5rem;
+  padding: 14px 25px;
+  font-size: 1.6rem; /* Larger button font */
   border-radius: 5px;
   cursor: pointer;
   width: 100%;
@@ -936,84 +918,120 @@ body {
 }
 
 .contact-form .form-button:hover {
-  background-color: #45a049; /* Darker green on hover */
+  background-color: #45a049;
 }
 
 .contact-form input::placeholder,
 .contact-form textarea::placeholder {
-  color: var(--jet_50); /* Light gray placeholder text */
+  color: var(--jet_50);
 }
 
 .contact-form input:focus,
 .contact-form textarea:focus {
-  border-color: #4CAF50; /* Green border on focus */
+  border-color: #4CAF50;
   outline: none;
 }
 
-/* Responsive adjustments */
+/* Mobile Responsive Adjustments */
+@media (max-width: 1024px) {
+  .contact-form {
+    max-width: 90%; /* Form takes more width */
+    padding: 20px;
+    margin: 0 10px;
+  }
+
+  .contact-form .form-title {
+    font-size: 1.6rem;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    font-size: 1.4rem; /* Larger input text */
+  }
+
+  .contact-form .form-button {
+    font-size: 1.4rem; /* Larger button text */
+    padding: 16px 30px; /* Increase button size */
+  }
+}
+
 @media (max-width: 768px) {
   .testi {
     flex-direction: column;
+    align-items: center;
   }
 
   .testi-content,
   .testi-form {
     flex: 1 1 100%;
     padding: 0;
+    margin-bottom: 20px;
   }
 
-  .testi-form {
-    width: 100%;
+  .testi-slider {
     max-width: 100%;
-    padding: 20px 10px; /* Reduce side padding for smaller screens */
+  }
+
+  .testi-card {
+    flex: 0 0 100%;
   }
 
   .contact-form {
-    /* Reduce padding for smaller screens */
-    max-width: 100%; /* Allow form to take full width on smaller screens */
-    border-radius: 0; /* Optional: Remove border-radius for full-width look */
+    width: 90%;
+    padding: 20px;
+    max-width: 90%;
   }
 
   .contact-form .form-title {
-    font-size: 1.3rem; /* Slightly smaller title on mobile */
+    font-size: 1.4rem;
   }
 
   .contact-form input,
   .contact-form textarea {
-    font-size: 0.9rem; /* Slightly smaller font size for inputs */
+    font-size: 1.3rem;
   }
 
   .contact-form .form-button {
-    padding: 10px 15px; /* Smaller button padding */
-    font-size: 0.9rem; /* Smaller button font size */
+    padding: 15px 28px;
+    font-size: 1.3rem;
   }
 }
 
 @media (max-width: 480px) {
+  .testi {
+    flex-direction: column;
+  }
+
+  .testi-content,
   .testi-form {
-    width: 80%;
-    max-width: 80%;
-    padding: 10px;
+    padding: 0 10px;
+    margin-bottom: 20px;
+  }
+
+  .testi-slider {
+    max-width: 100%;
   }
 
   .contact-form {
-    padding: 15px; /* Further reduce padding for very small screens */
+    padding: 20px;
+    max-width: 100%;
   }
 
   .contact-form .form-title {
-    font-size: 1.2rem; /* Even smaller title for very small screens */
+    font-size: 1.4rem;
   }
 
   .contact-form input,
   .contact-form textarea {
-    font-size: 0.85rem; /* Smaller font size for very small screens */
+    font-size: 1.2rem;
   }
 
   .contact-form .form-button {
-    padding: 8px 12px; /* Smaller button padding */
-    font-size: 0.85rem; /* Smaller button font size */
+    padding: 18px 32px;
+    font-size: 1.4rem;
   }
 }
+
 
 
 
@@ -1867,81 +1885,7 @@ body {
 /*  */
 /*  */
 
-/* Popup Overlay */
-/* Popup Overlay */
-.popup-overlay {
-  display: none;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.7);
-  justify-content: center;
-  align-items: center;
-}
 
-/* Popup Content */
-.popup-content {
-  background: #f8f6f6;
-  padding: 30px;
-  width: 80%;
-  max-width: 700px;
-  border-radius: 10px;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
-  position: relative;
-}
-
-/* Close Button */
-.popup-close {
-  position: absolute;
-  top: 15px;
-  right: 20px;
-  font-size: 2rem;
-  cursor: pointer;
-  color: var(--jet);
-}
-
-/* Popup Layout */
-/* Popup Overlay */
-.popup-overlay {
-  display: none;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.7);
-  justify-content: center;
-  align-items: center;
-  z-index: 1000;
-}
-
-/* Popup Content */
-.popup-content {
-  background: #f8f6f6;
-  padding: 30px;
-  width: 90%;
-  max-width: 800px;
-  border-radius: 15px;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
-  position: relative;
-}
-
-/* Close Button */
-.popup-close {
-  position: absolute;
-  top: 15px;
-  right: 20px;
-  font-size: 2rem;
-  cursor: pointer;
-  color: var(--jet);
-  transition: color 0.3s ease;
-}
-
-.popup-close:hover {
-  color: #b0aaaa;
-}
 
 /* Popup Overlay */
 .popup-overlay {
@@ -1977,7 +1921,7 @@ body {
   right: 20px;
   font-size: 2rem;
   cursor: pointer;
-  color: var(--jet);
+  color: #ed8787;
   transition: color 0.3s ease;
 }
 
